@@ -95,23 +95,38 @@
 
 <div id="signup">
 
+    <div id=signuptitle >
+      <p class="text_head" >SIGN UP</p>
+    </div>
+
     <form class="navbar-form" role="search">
+
+      <!-- Explanatory text-->
+      <div>
+        <p>Please fill in the form below to register with Leftover:</p>
+        <p class="smallprint">All fields marked with asterisk * are compulsory</p>
+      </div>
 
       <!--NAMES-->
       <div id="name" >
+
         <div class="form-group" id="firstname">
+          <span class="FormTitle">Forename* </span>
           <input id="firstname" type="text" class="form-control" placeholder="First Name">
         </div>
 
         <div class="form-group" id="surname">
+          <span class="FormTitle">Surname* </span>
           <input id="surname" type="text" class="form-control" placeholder="Surname">
         </div>
+
       </div>
 
       <!--EMAIL STUFF 
             Maybe implement SendGrid stuff here later if spare time?
       -->
       <div class="form-group" id="emailsignup">
+        <span class="FormTitle">Email Address* </span>
         <input id="emailsignup" type="text" class="form-control" placeholder="Email Address">
       </div>
 
@@ -121,13 +136,24 @@
       <div id="passwordstuff"
 
         <div class="form-group" id="passwordsignup">
+          <span class="FormTitle">Password* </span>
           <input id="passwordsignup" type="text" class="form-control" placeholder="Password">
         </div>
 
         <div class="form-group" id="passwordconfirm">
+          <span class="FormTitle">Confirm Password* </span>
           <input id="passwordconfirm" type="text" class="form-control" placeholder="Confirm Password">
         </div>
       
+      </div>
+
+      <!--DEFAULT PREFERENCES-->
+      <div class="form-group" id="defaultradius">
+        <span class="FormTitle">Default Radius </span>
+        <input id="defaultradius" type="text" class="form-control" placeholder="How Nearby?">
+        <span>  Miles</span>
+
+        <p>Please Note if left blank, the default will be set to 10 Miles</p>
       </div>
 
       <!-- LOCATION THINGS
