@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcnd.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body ng-app='app'>
+	<div class='container'>
+    <form id="checkout" method="post" action="/checkout">
+          <div id="dropin"></div>
+        <input type="submit" value="Pay $10">
+    </form>    
+    <!-- 
+        braintree.setup("CLIENT-TOKEN-FROM-SERVER", "dropin", {
+          container: "checkout",
+            paypal: {
+                singleUse: true,
+                amount: 10.00,
+                currency: 'USD'
+            }
+        });
+    -->
+    
+    </div>
+    <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+    <script>
+        braintree.setup("CLIENT-TOKEN-FROM-SERVER", "<integration>", options);
+    </script>
+    <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+</body>
+</html>
+
