@@ -79,14 +79,17 @@
 
   </div>
 
+<div id="mainpages">
+
   <!-- THE ABOUT PAGE -->
 
-  <div id="about" class="container-fluid">
+  <div id="aboutpage" class="container-fluid page">
 
 
-    <div id="abouttext" class="row">
+    <div class="row">
+    <div class="abouttext">
 
-      <div class="col-md-6">
+      <div class="col-md-6 content about">
 
         <div id="aboutustitle" >
           <p class="text_head" >ABOUT US</p>
@@ -97,12 +100,13 @@
         </p>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 about">
 
         <img src="#" >
 
       </div>
 
+    </div>
     </div>
 
   </div>
@@ -110,13 +114,15 @@
 
   <!-- THE SIGN UP PAGE -->
 
-  <div id="signup" class="container-fluid">
+  <div id="signup" class="container-fluid page">
 
-      <div id="signuptitle" >
+    <div class="content">
+
+      <div id="signuptitle" class="col-md-12" >
         <p class="text_head " >SIGN UP</p>
       </div>
 
-      <div>
+      <div class="col-md-12">
 
         <form >
 
@@ -130,12 +136,12 @@
           <div id="name" >
 
             <div class="form-group" id="firstname">
-              <span class="FormTitle">Forename* </span>
+              <label class="FormTitle ">Forename* </label>
               <input id="firstname" type="text" class="form-control" placeholder="First Name">
             </div>
 
             <div class="form-group" id="surname">
-              <span class="FormTitle">Surname* </span>
+              <label class="FormTitle ">Surname* </label>
               <input id="surname" type="text" class="form-control" placeholder="Surname">
             </div>
 
@@ -145,7 +151,7 @@
                 Maybe implement SendGrid stuff here later if spare time?
           -->
           <div class="form-group" id="emailsignup">
-            <span class="FormTitle">Email Address* </span>
+            <label class="FormTitle">Email Address* </label>
             <input id="emailsignup" type="text" class="form-control" placeholder="Email Address">
           </div>
 
@@ -155,12 +161,12 @@
           <div id="passwordstuff"
 
             <div class="form-group" id="passwordsignup">
-              <span class="FormTitle">Password* </span>
+              <label class="FormTitle">Password* </label>
               <input id="passwordsignup" type="text" class="form-control" placeholder="Password">
             </div>
 
             <div class="form-group" id="passwordconfirm">
-              <span class="FormTitle">Confirm Password* </span>
+              <label class="FormTitle">Confirm Password* </label>
               <input id="passwordconfirm" type="text" class="form-control" placeholder="Confirm Password">
             </div>
           
@@ -168,7 +174,7 @@
 
           <!--DEFAULT PREFERENCES-->
           <div class="form-group" id="defaultradius">
-            <span class="FormTitle">Default Radius </span>
+            <label class="FormTitle">Default Radius </label>
             <input id="defaultradius" type="text" class="form-control" placeholder="How Nearby?">
             <span>  Miles</span>
 
@@ -196,14 +202,18 @@
           </div>
 
         </form>
+      </div>
+    </div>
 
   </div>
 
   <!-- TERMS & CONDITIONS -->
 
-  <div id="TCs">
+  <div id="TCs" class="container-fluid page">
 
-    <div id="TCtext" >
+    <div id="TCtext" class="row">
+    <div class ="col-md-12">
+    <div class="content">
 
       <div id="TCtitle" >
         <p class="text_head" >TERMS AND CONDITIONS</p>
@@ -221,8 +231,12 @@
       </div>
 
     </div>
+    </div>
+    </div>
 
   </div>
+
+</div>
 
 
 <!--Javscript Libraries-->

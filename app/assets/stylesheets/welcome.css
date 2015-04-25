@@ -8,11 +8,31 @@ body {
 	font-family: 'Oswald', sans-serif;
 
 }
+
+.page {
+	height:100vh;
+	border-bottom-color: #2e2e2e;
+}
+
+.abouttext {
+	top: 400px;
+	height: 100vh;
+
+}
+.content {
+	top:150px;
+	min-height:200px;
+}
+
+.about {
+	height:200px;
+}
+
 //Header stuffs
 
 .navbar {
 	position: fixed;
-	min-height: 150px;
+	height: 200px;
 }
 
 nav {
@@ -110,25 +130,6 @@ nav {
 
 //the about page stuffs
 
-#about {
-	top: -800px;
-	margin: 0px;
-	//background:url('#') 50% 0 no-repeat fixed;
-	background-size: cover;
-	height: 400px;
-
-}
-
-#abouttext {
-	background-color: white;
-	width: 50%;
-	position: absolute;
-	border-radius: 10px;
-	margin-left: 40px;
-	padding: 10px; 
-	top: 350px;
-
-}
 
 #aboutustitle {
 	z-index: 1;
@@ -141,7 +142,7 @@ nav {
 
 	//background:url('#') 50% 0 no-repeat fixed;
 	background-size: cover;
-	height: 1000px;
+	height: 100vh;
 	margin: 0 auto;
     overflow: hidden;
     padding: 200px 50px;
@@ -185,24 +186,17 @@ nav {
 
 
 #TCs {
-	background-image: url("#");
-	background:url('#') 50% 0 no-repeat fixed;
-	background-size: cover;
-	height: 1000px;
+	//background-image: url("#");
+	//ackground:url('#') 50% 0 no-repeat fixed;
+	//background-size: cover;
 	margin: 0 auto;
-    overflow: hidden;
     padding: 200px 50px;
 }
 
 #TCtext {
-	background-color: white;
-	width: 50%;
-	position: absolute;
 	border-radius: 10px;
 	margin-left: 40px;
 	padding: 10px; 
-	top: 350px;
-	//z-index: -1;
 
 }
 
