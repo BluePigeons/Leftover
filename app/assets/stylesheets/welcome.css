@@ -1,0 +1,231 @@
+
+
+body {
+	//background-image: url("#");
+}
+
+* {
+	font-family: 'Oswald', sans-serif;
+
+}
+
+#thetop {
+	position: fixed;
+	top: 100px;
+	width: 100%;
+	z-index: 1;
+}
+
+//login form at the top of the page
+
+#login {
+	//position: absolute;
+	//top: 10;
+	//right: 0;
+	height: 200px;
+	background-color: white;
+	z-index: 1;
+}
+
+#emailogin {
+	position: absolute;
+	bottom: 110px;
+	width: 200px;
+	height: 30px;
+	right: 50px;
+}
+
+#passwordlogin {
+	position: absolute;
+	bottom: 70px;
+	width: 200px;
+	height: 30px;
+	//right: 50px;
+}
+
+#loginbutton {
+	position: absolute;
+	bottom: 30px;
+	height: 30px;
+	//right: 50px;
+
+}
+
+//the header stuffs
+
+#headingbanner {
+	position: absolute;
+	background-color: white;
+	top: 0px;
+	height: 200px;
+	z-index: 1;
+}
+
+
+#logo {
+	position: absolute;
+	height: 200px;
+	left: 375px;
+	top: 0px;
+		
+}
+
+#lpbox {
+	position: absolute;
+	bottom: 20px;
+	//z-index: 0;
+	left: 0px;
+}
+
+#tagbox {
+	position: absolute;
+	bottom: 0px;
+	//z-index: 1;
+	width: 300px;
+	left: 30px;
+}
+
+#logophrase {
+	font-family: 'Indie Flower', cursive;
+	font-size: 150px;
+	color: #4C1A00;
+}
+
+#tagline {
+	font-size: 40px;
+	width: 300px;
+
+}
+
+//navigation bar
+
+#thenav {
+	position: fixed;
+	top: 200px;
+	width: 100%;
+	background-color: green;
+	z-index: 1;
+}
+
+//the about page stuffs
+
+#about {
+	top: 800px;
+	margin: 0px;
+	//background-image: url(#);
+	background:url('#') 50% 0 no-repeat fixed;
+	background-size: cover;
+	height: 1000px;
+	//z-index: -1;
+}
+
+#abouttext {
+	background-color: white;
+	width: 50%;
+	position: absolute;
+	border-radius: 10px;
+	margin-left: 40px;
+	padding: 10px; 
+	top: 350px;
+	//z-index: -1;
+
+}
+
+
+//Sign Up Form
+
+#signup {
+	background-image: url("#");
+	background:url('#') 50% 0 no-repeat fixed;
+	background-size: cover;
+	height: 1000px;
+	margin: 0 auto;
+    overflow: hidden;
+    padding: 200px 50px;
+    //z-index: -1;
+	//width: 100%;
+	//position: fixed;
+	//top: 4000px;
+
+}
+
+#signupforms {
+	//padding: 50px;
+}
+
+
+
+#firstname {
+	
+}
+
+#surname {
+	
+}
+
+#emailsignup {
+	
+
+}
+
+#passwordsignup {
+	
+}
+
+#passwordconfirm {
+	
+}
+
+
+#signupbtn {
+	
+}
+
+//Terms and Conditions
+
+
+#TCs {
+	background-image: url("#");
+	background:url('#') 50% 0 no-repeat fixed;
+	background-size: cover;
+	height: 1000px;
+	margin: 0 auto;
+    overflow: hidden;
+    padding: 200px 50px;
+}
+
+#TCtext {
+	background-color: white;
+	width: 50%;
+	position: absolute;
+	border-radius: 10px;
+	margin-left: 40px;
+	padding: 10px; 
+	top: 350px;
+	//z-index: -1;
+
+}
+
+
+//CLASSES!!!
+
+.logoimg {
+	position:absolute;
+	height: 200px;
+}
+
+.text_head {
+	font-size: 30px;
+}
+
+.form-group {
+	height: 30px;
+	width: 200px;
+	//z-index: -1;
+}
+
+.smallprint {
+	color: red;
+}
+
+//
