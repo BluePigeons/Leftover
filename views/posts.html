@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcnd.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body ng-app='app'>
+	<div class='container'>
+		<h1>Recent Posts</h1>
+		<ul class='list-group'>
+			<li class='list-group-item'>
+				<strong>@luduvigoxxx</strong>
+				<span>Node rules!</span>
+			</li>
+			<li class='list-group-item'>
+				<strong>@luduvigo</strong>
+				<span>trying out Angular.js...</span>	
+			</li>
+		</ul>
+	</div>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js'></script>
+	<script>
+		var app = angular.module('app', [])
+			app.controller('PostsCtrl', function($scope) {
+				$scope.posts = [
+					{
+						username : 'luduvigo', body : 'Prova Angular'
+					},
+					{
+						username : 'luduvigo', body : 'Prova Angular 2'
+					}
+			]
+		})
+	</script>
+</body>
+</html>
+
