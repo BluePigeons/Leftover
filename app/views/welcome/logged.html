@@ -117,8 +117,29 @@
 
     <div class="content">
 
-      <div>
+      <div id="filters">
 
+          <form class="navbar-form" role="search">
+
+            <div class="form-group">
+              <input id="tags" type="text" class="form-control" placeholder="Type Of Product">
+            </div>
+
+            <div class="form-group">
+              <input id="radiusfilter" type="" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <input id="pricefilter" type="" class="form-control">
+            </div>
+
+            <button id="filterbutton"type="submit" class="btn btn-default" onclick="#">Filter</button>
+
+          </form>
+
+      </div>
+
+      <div id="availproductsview">
 
       </div>
 
@@ -132,10 +153,40 @@
 
     <div class="content">
 
+      <form>
 
+        <div class="form-group">
+          <label>Tags</label>
+          <input class="form-control" id="taginput" placeholder="Add Tags">
+        </div>
 
+        <div class="form-group">
+          <label>Description</label>
+          <input type="text" class="form-control" id="descriptioninput" placeholder="Add description">
+        </div>
 
-      </div>
+        <div class="form-group">Photo</label>
+          <input type="file" id="exampleInputFile">
+          <p>Example block-level help text here.</p>
+        </div>
+
+        <div class="form-group">
+          <label>Location</label>
+          <input class="form-control" id="locationinput" placeholder="Location">
+        </div>
+
+        <div class="form-group">
+          <label>Expiry Time</label>
+          <input class="form-control" id="timeinput" placeholder="Time">
+        </div>
+
+        <div class="form-group">
+          <label>Required/Minimum Payment</label>
+          <input class="form-control" id="payinput" placeholder="£££">
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
 
   </div>
