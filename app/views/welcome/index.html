@@ -1,201 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leftover...</title>
+
+  <!--CSS Libraries-->
+
+  <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/welcome.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+</head>
+<body>
+
 <!-- THE HEADER STUFF -->
 
-<div id="thetop" >
+  <div id="thetop" class="headerstuff">
 
-<!--Sticky Navbar stuffs-->
-  <div id="thenav" class="container-fluid">
-    <div class="row">
-          <ul >
+  <!--Sticky Navbar stuffs-->
+  <nav id="navbar">
 
-            <!--THE LOGO-->
+    <div id="thenav" class="container-fluid headerstuff">
+      <div class="row">
+            
+        <!--THE LOGO-->
 
-            <div id="logo" class="col-md-4">
-              <div id="lpbox">
-                <h1 id="logophrase" >Leftover...</h1>
-              </div>
+        <div id="logo" class="headerstuff col-md-4 ">
+          <div id="lpbox">
+            <h1 id="logophrase" >Leftover...</h1>
+          </div>
 
-              <div id="tagbox">
-                <p id="tagline">Reducing waste...</p>
-              </div>
-            </div>
+          <div id="tagbox">
+            <p id="tagline">Reducing waste...</p>
+          </div>
+        </div>
 
-            <!--THE NON LOGGED IN PAGES-->
+        <!--THE NON LOGGED IN PAGES-->
 
-            <div id="notthelogin" class="col-md-4">
-
-              <li >             
-                <a href="#" role="button" >About</a>
-              </li>
-
-              <li >             
-                <a href="#" role="button" >Sign Up</a>          
-              </li>
-              
-              <li >         
-                <a href="#" role="button" >Terms and Conditions</a>          
-              </li>
-
-            </div>
-
-            <!--THE LOGIN FORM -->
-
-            <div id="login" class="col-md-4" style="position: absolute;right:0px;top:0">
-              <form class="navbar-form" role="search">
-              <div class="form-group">
-                <input id="emailogin" type="text" class="form-control" placeholder="Email Address">
-              </div>
-              <div class="form-group">
-                <input id="passwordlogin" type="text" class="form-control" placeholder="Password">
-              </div>
-              <button id="loginbutton"type="submit" class="btn btn-default">Login</button>
-              </form>
-            </div>            
-
-          </ul>
+        <div id="notthelogin" class="headerstuff col-md-4">
           
+            <span>            
+              <a href="#" role="button" class="menutitle">About</a>
+            </span>
+
+            <span>            
+              <a href="#" role="button" class="menutitle">Sign Up</a>          
+            </span>
+            
+            <span>        
+              <a href="#" role="button" class="menutitle">Terms and Conditions</a>          
+            </span>
+
+        </div>
+
+        <!--THE LOGIN FORM -->
+
+        <div id="login" class="headerstuff col-md-4" >
+          <form class="navbar-form" role="search">
+          <div class="form-group">
+            <input id="emailogin" type="text" class="form-control" placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <input id="passwordlogin" type="text" class="form-control" placeholder="Password">
+          </div>
+          <button id="loginbutton"type="submit" class="btn btn-default">Login</button>
+          </form>
+        </div>            
+            
+      </div>
     </div>
+
+  </nav>
+
   </div>
 
-</div>
+  <!-- THE ABOUT PAGE -->
 
-<!-- THE ABOUT PAGE -->
-
-<div id="about" >
+  <div id="about" class="container-fluid">
 
 
-  <div id="abouttext" >
+    <div id="abouttext" >
 
-    <div id=aboutustitle >
-      <p class="text_head" >ABOUT US</p>
-    </div>
+      <div id=aboutustitle >
+        <p class="text_head" >ABOUT US</p>
+      </div>
 
-    <div>
-      <p> 
-        Reducing waste by allowing local businesses to give away products reduced to clear at the end of the day by alerting nearby customers of the products so they can buy them and they don't go to landfill.
-      </p>
-    </div>
-
-  </div>
-
-  <div>
-
-    <img src="#" >
-
-  </div>
-
-</div>
-
-
-<!-- THE SIGN UP PAGE -->
-
-<div id="signup">
-
-    <div id=signuptitle >
-      <p class="text_head" >SIGN UP</p>
-    </div>
-
-    <form class="navbar-form" role="search">
-
-      <!-- Explanatory text-->
       <div>
-        <p>Please fill in the form below to register with Leftover:</p>
-        <p class="smallprint">All fields marked with asterisk * are compulsory</p>
+        <p> 
+          Reducing waste by allowing local businesses to give away products reduced to clear at the end of the day by alerting nearby customers of the products so they can buy them and they don't go to landfill.
+        </p>
       </div>
 
-      <!--NAMES-->
-      <div id="name" >
-
-        <div class="form-group" id="firstname">
-          <span class="FormTitle">Forename* </span>
-          <input id="firstname" type="text" class="form-control" placeholder="First Name">
-        </div>
-
-        <div class="form-group" id="surname">
-          <span class="FormTitle">Surname* </span>
-          <input id="surname" type="text" class="form-control" placeholder="Surname">
-        </div>
-
-      </div>
-
-      <!--EMAIL STUFF 
-            Maybe implement SendGrid stuff here later if spare time?
-      -->
-      <div class="form-group" id="emailsignup">
-        <span class="FormTitle">Email Address* </span>
-        <input id="emailsignup" type="text" class="form-control" placeholder="Email Address">
-      </div>
-
-      <!--PASSWORD STUFF
-            Something something SQL and security something something...
-      -->
-      <div id="passwordstuff"
-
-        <div class="form-group" id="passwordsignup">
-          <span class="FormTitle">Password* </span>
-          <input id="passwordsignup" type="text" class="form-control" placeholder="Password">
-        </div>
-
-        <div class="form-group" id="passwordconfirm">
-          <span class="FormTitle">Confirm Password* </span>
-          <input id="passwordconfirm" type="text" class="form-control" placeholder="Confirm Password">
-        </div>
-      
-      </div>
-
-      <!--DEFAULT PREFERENCES-->
-      <div class="form-group" id="defaultradius">
-        <span class="FormTitle">Default Radius </span>
-        <input id="defaultradius" type="text" class="form-control" placeholder="How Nearby?">
-        <span>  Miles</span>
-
-        <p>Please Note if left blank, the default will be set to 10 Miles</p>
-      </div>
-
-      <!-- LOCATION THINGS
-      
-      Do we want to ask the user for an address and simply use that if we don't get any more complicated location things working?
-
-        <div class="form-group" id="firstaddresssignup">
-          <input id="firstaddresssignup" type="text" class="form-control" placeholder="First Line of Address">
-        </div>
-
-        <div class="form-group" id="postcodesignup">
-          <input id="postcodesignup" type="text" class="form-control" placeholder="Postcode">
-        </div>
-
-      -->
-
-      <!-- THE SUBMIT BUTTON -->
-
-      <div id="signupbtn"> 
-        <button type="submit" class="btn btn-default">Sign Up</button>
-      </div>
-
-    </form>
-
-</div>
-
-<!-- TERMS & CONDITIONS -->
-
-<div id="TCs">
-
-  <div id="TCtext" >
-
-    <div id=TCtitle >
-      <p class="text_head" >TERMS AND CONDITIONS</p>
     </div>
 
     <div>
-      <ol>
-        
-      <li>You shouldn't bother reading the Terms and Conditions properly, I mean who actually does that?</li>
-      <li>Something something small print...</li>
-      <li>Mumble mumble security and privacy issues mumble mumble</li>
-      <li>Cristiano!</li>
 
-      </ol>
+      <img src="#" >
+
     </div>
 
   </div>
 
-</div>
+
+  <!-- THE SIGN UP PAGE -->
+
+  <div id="signup" class="container-fluid">
+
+      <div id=signuptitle >
+        <p class="text_head" >SIGN UP</p>
+      </div>
+
+      <form class="navbar-form" role="search">
+
+        <!-- Explanatory text-->
+        <div>
+          <p>Please fill in the form below to register with Leftover:</p>
+          <p class="smallprint">All fields marked with asterisk * are compulsory</p>
+        </div>
+
+        <!--NAMES-->
+        <div id="name" >
+
+          <div class="form-group" id="firstname">
+            <span class="FormTitle">Forename* </span>
+            <input id="firstname" type="text" class="form-control" placeholder="First Name">
+          </div>
+
+          <div class="form-group" id="surname">
+            <span class="FormTitle">Surname* </span>
+            <input id="surname" type="text" class="form-control" placeholder="Surname">
+          </div>
+
+        </div>
+
+        <!--EMAIL STUFF 
+              Maybe implement SendGrid stuff here later if spare time?
+        -->
+        <div class="form-group" id="emailsignup">
+          <span class="FormTitle">Email Address* </span>
+          <input id="emailsignup" type="text" class="form-control" placeholder="Email Address">
+        </div>
+
+        <!--PASSWORD STUFF
+              Something something SQL and security something something...
+        -->
+        <div id="passwordstuff"
+
+          <div class="form-group" id="passwordsignup">
+            <span class="FormTitle">Password* </span>
+            <input id="passwordsignup" type="text" class="form-control" placeholder="Password">
+          </div>
+
+          <div class="form-group" id="passwordconfirm">
+            <span class="FormTitle">Confirm Password* </span>
+            <input id="passwordconfirm" type="text" class="form-control" placeholder="Confirm Password">
+          </div>
+        
+        </div>
+
+        <!--DEFAULT PREFERENCES-->
+        <div class="form-group" id="defaultradius">
+          <span class="FormTitle">Default Radius </span>
+          <input id="defaultradius" type="text" class="form-control" placeholder="How Nearby?">
+          <span>  Miles</span>
+
+          <p>Please Note if left blank, the default will be set to 10 Miles</p>
+        </div>
+
+        <!-- LOCATION THINGS
+        
+        Do we want to ask the user for an address and simply use that if we don't get any more complicated location things working?
+
+          <div class="form-group" id="firstaddresssignup">
+            <input id="firstaddresssignup" type="text" class="form-control" placeholder="First Line of Address">
+          </div>
+
+          <div class="form-group" id="postcodesignup">
+            <input id="postcodesignup" type="text" class="form-control" placeholder="Postcode">
+          </div>
+
+        -->
+
+        <!-- THE SUBMIT BUTTON -->
+
+        <div id="signupbtn"> 
+          <button type="submit" class="btn btn-default">Sign Up</button>
+        </div>
+
+      </form>
+
+  </div>
+
+  <!-- TERMS & CONDITIONS -->
+
+  <div id="TCs">
+
+    <div id="TCtext" >
+
+      <div id=TCtitle >
+        <p class="text_head" >TERMS AND CONDITIONS</p>
+      </div>
+
+      <div>
+        <ol>
+          
+        <li>You shouldn't bother reading the Terms and Conditions properly, I mean who actually does that?</li>
+        <li>Something something small print...</li>
+        <li>Mumble mumble security and privacy issues mumble mumble</li>
+        <li>Cristiano!</li>
+
+        </ol>
+      </div>
+
+    </div>
+
+  </div>
+
+
+<!--Javscript Libraries-->
+  <script src="../../assets/javascripts/welcome.js"></script>
+
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</body>
+</html>
