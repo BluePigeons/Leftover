@@ -23,13 +23,6 @@ app.engine('html', cons.swig);
 app.set('view engine', 'html');
 app.set('views', __dirname + "/views");
 
-
-//app.get('/', function(req, res){
-//    app.render('index', function(err, html){
-//        console.log(html);
-//    });
-//});
-
 app.get('/', function (req, res) {
     res.render('index');
     console.log('OK');
@@ -47,6 +40,10 @@ app.get('/braintree', function (req, res){
 });
 
 app.post('/checkout', function (req, res){
+    console.log('checkout');
+    console.log(req.body);
+
+    var nonce = req.body.payment_method_nonce;
     res.render('checkout');
     console.log('checkout');  
 });
@@ -78,25 +75,14 @@ var gateway = braintree.connect({
     privateKey:   'fc0b95e54a475d5917687a4973c6e622'
 });
 
-gateway.clientToken.generate({
-      customerId: 'id1'
-}, function (err, response) {
-      var clientToken = response.clientToken
-      console.log('Inside 1');
-});
-
 //Send a client token to your client
 app.get("/client_token", function (req, res) {
-    gateway.clientToken.generate({
-        customerId: 'id1'
-    }, function (err, response) {
-        res.send(response.clientToken);
-        console.log('Inside 2');
+    gateway.clientToken.generate({}, function (err, response) {
+        
+      var clientToken = response.clientToken
+      res.send(clientToken);
     });
-    console.log("client token");
-    console.log(gateway.clientToken);
 });
-
 //Receive a payment method nonce from your client
 app.post("/purchases", function (req, res) {
       console.log(req);
