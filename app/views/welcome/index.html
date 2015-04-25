@@ -1,81 +1,60 @@
+<!-- THE HEADER STUFF -->
+
 <div id="thetop" >
 
-  <div id="login" class="col-md-4" style="position: absolute;right:0px;top:0">
-    <form class="navbar-form" role="search">
-    <div class="form-group">
-      <input id="emailogin" type="text" class="form-control" placeholder="Email Address">
-    </div>
-    <div class="form-group">
-      <input id="passwordlogin" type="text" class="form-control" placeholder="Password">
-    </div>
-    <button id="loginbutton"type="submit" class="btn btn-default">Login</button>
-    </form>
-  </div>
-
-  <div class="row col-md-8" id="headingbanner">
-
-
-    <div id="logo" >
-      <div id="lpbox">
-        <h1 id="logophrase" >Leftover...</h1>
-      </div>
-
-      <div id="tagbox">
-        <p id="tagline">Reducing waste...</p>
-      </div>
-    </div>
-
-
-
-  </div>
-
-
+<!--Sticky Navbar stuffs-->
   <div id="thenav">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
        
-
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            
 
-            <li class="dropdown">
-              
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Retailers<span class="caret"></span></a>
-              
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            
-            </li>
+            <!--THE LOGO-->
 
-            <li class="dropdown">
+            <div id="logo" class="col-md-4">
+              <div id="lpbox">
+                <h1 id="logophrase" >Leftover...</h1>
+              </div>
+
+              <div id="tagbox">
+                <p id="tagline">Reducing waste...</p>
+              </div>
+            </div>
+
+            <!--THE NON LOGGED IN PAGES-->
+
+            <div id="notthelogin" class="col-md-4">
+
+              <li >             
+                <a href="#" role="button" >About</a>
+              </li>
+
+              <li >             
+                <a href="#" role="button" >Sign Up</a>          
+              </li>
               
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Users<span class="caret"></span></a>
-              
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            
-            </li>
-            
-            <li><a href="#">FAQs/Help</a></li>
+              <li >         
+                <a href="#" role="button" >Terms and Conditions</a>          
+              </li>
+
+            </div>
+
+            <!--THE LOGIN FORM -->
+
+            <div id="login" class="col-md-4" style="position: absolute;right:0px;top:0">
+              <form class="navbar-form" role="search">
+              <div class="form-group">
+                <input id="emailogin" type="text" class="form-control" placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <input id="passwordlogin" type="text" class="form-control" placeholder="Password">
+              </div>
+              <button id="loginbutton"type="submit" class="btn btn-default">Login</button>
+              </form>
+            </div>            
 
           </ul>
-          
-
         </div>
         
       </div>
@@ -84,26 +63,41 @@
 
 </div>
 
+<!-- THE ABOUT PAGE -->
 
-<div id="mainpage" >
+<div id="about" >
 
 
-  <div id="about" >
-    <p class="text_head" >ABOUT US</p>
-    <p> </p>
+  <div id="abouttext" >
+
+    <div id=aboutustitle >
+      <p class="text_head" >ABOUT US</p>
+    </div>
+
+    <div>
+      <p> 
+        Reducing waste by allowing local businesses to give away products reduced to clear at the end of the day by alerting nearby customers of the products so they can buy them and they don't go to landfill.
+      </p>
+    </div>
+
   </div>
-  
+
+  <div>
+
+    <img src="#" >
+
+  </div>
 
 </div>
 
 
-
+<!-- THE SIGN UP PAGE -->
 
 <div id="signup">
 
-  <!--<div id="signupforms">-->
     <form class="navbar-form" role="search">
 
+      <!--NAMES-->
       <div id="name" >
         <div class="form-group" id="firstname">
           <input id="firstname" type="text" class="form-control" placeholder="First Name">
@@ -114,33 +108,73 @@
         </div>
       </div>
 
+      <!--EMAIL STUFF 
+            Maybe implement SendGrid stuff here later if spare time?
+      -->
       <div class="form-group" id="emailsignup">
         <input id="emailsignup" type="text" class="form-control" placeholder="Email Address">
       </div>
 
-      <div class="form-group" id="passwordsignup">
-        <input id="passwordsignup" type="text" class="form-control" placeholder="Password">
+      <!--PASSWORD STUFF
+            Something something SQL and security something something...
+      -->
+      <div id="passwordstuff"
+
+        <div class="form-group" id="passwordsignup">
+          <input id="passwordsignup" type="text" class="form-control" placeholder="Password">
+        </div>
+
+        <div class="form-group" id="passwordconfirm">
+          <input id="passwordconfirm" type="text" class="form-control" placeholder="Confirm Password">
+        </div>
+      
       </div>
 
-      <div class="form-group" id="passwordconfirm">
-        <input id="passwordconfirm" type="text" class="form-control" placeholder="Confirm Password">
-      </div>
+      <!-- LOCATION THINGS
+      
+      Do we want to ask the user for an address and simply use that if we don't get any more complicated location things working?
 
-      <div class="form-group" id="firstaddresssignup">
-        <input id="firstaddresssignup" type="text" class="form-control" placeholder="First Line of Address">
-      </div>
+        <div class="form-group" id="firstaddresssignup">
+          <input id="firstaddresssignup" type="text" class="form-control" placeholder="First Line of Address">
+        </div>
 
-      <div class="form-group" id="postcodesignup">
-        <input id="postcodesignup" type="text" class="form-control" placeholder="Postcode">
-      </div>
+        <div class="form-group" id="postcodesignup">
+          <input id="postcodesignup" type="text" class="form-control" placeholder="Postcode">
+        </div>
+
+      -->
+
+      <!-- THE SUBMIT BUTTON -->
 
       <div id="signupbtn"> 
         <button type="submit" class="btn btn-default">Sign Up</button>
       </div>
 
     </form>
-      
-  <!--</div>-->
 
 </div>
 
+<!-- TERMS & CONDITIONS -->
+
+<div id="TCs">
+
+  <div id="TCtext" >
+
+    <div id=TCtitle >
+      <p class="text_head" >TERMS AND CONDITIONS</p>
+    </div>
+
+    <div>
+      <ol>
+        
+      <li>You shouldn't bother reading the Terms and Conditions properly, I mean who actually does that?</li>
+      <li>Something something small print...</li>
+      <li>Mumble mumble security and privacy issues mumble mumble</li>
+      <li>Cristiano!</li>
+
+      </ol>
+    </div>
+
+  </div>
+
+</div>
