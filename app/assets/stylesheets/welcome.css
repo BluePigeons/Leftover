@@ -66,8 +66,7 @@ nav {
 
 // The pages
 .menutitle {
-	font-size: 30px;
-	background-color: white;
+	font-size: 100px;
 }
 
 #notthelogin {
@@ -77,14 +76,10 @@ nav {
 //login form at the top of the page
 
 #login {
-	//position: absolute;
-	//top: 10;
-	//right: 0;
+
 	position: absolute;
 	right:0px;
 	top:0
-	min-height: 200px;
-	background-color: white;
 	z-index: 1;
 }
 
@@ -93,7 +88,7 @@ nav {
 	bottom: 110px;
 	width: 200px;
 	height: 30px;
-	//right: 50px;
+;
 }
 
 #passwordlogin {
@@ -101,14 +96,14 @@ nav {
 	bottom: 70px;
 	width: 200px;
 	height: 30px;
-	//right: 50px;
+
 }
 
 #loginbutton {
 	position: absolute;
 	bottom: 30px;
 	height: 30px;
-	//right: 50px;
+
 
 }
 
@@ -116,13 +111,12 @@ nav {
 //the about page stuffs
 
 #about {
-	top: 800px;
+	top: -800px;
 	margin: 0px;
-	//background-image: url(#);
 	//background:url('#') 50% 0 no-repeat fixed;
 	background-size: cover;
-	min-height: 1000px;
-	//z-index: -1;
+	height: 400px;
+
 }
 
 #abouttext {
@@ -133,25 +127,25 @@ nav {
 	margin-left: 40px;
 	padding: 10px; 
 	top: 350px;
-	//z-index: -1;
 
+}
+
+#aboutustitle {
+	z-index: 1;
 }
 
 
 //Sign Up Form
 
 #signup {
-	background-image: url("#");
-	background:url('#') 50% 0 no-repeat fixed;
+
+	//background:url('#') 50% 0 no-repeat fixed;
 	background-size: cover;
 	height: 1000px;
 	margin: 0 auto;
     overflow: hidden;
     padding: 200px 50px;
-    //z-index: -1;
-	//width: 100%;
-	//position: fixed;
-	//top: 4000px;
+
 
 }
 
