@@ -5,7 +5,7 @@
 
   <!--CSS Libraries-->
 
-  <link rel="stylesheet" type="text/css" href="../public/Stylesheets/welcome.css">
+  <link rel="stylesheet" type="text/css" href="welcome.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -65,8 +65,8 @@
         <!--THE LOGOUT FORM -->
 
         <div id="logout" class="headerstuff col-md-4" >
-          <form class="navbar-form">
-          <button id="logoutbutton" onclick="javascript:location.href='index.html'" class="menutitle btn btn-lg btn-danger">Logout</button>
+            <form class="navbar-form" action="http://localhost:8080/"> 
+          <button id="logoutbutton"  class="menutitle btn btn-lg btn-danger">Logout</button>
           </form>
         </div>            
             
@@ -163,30 +163,45 @@
 
             <div id="item1" class="item active container-fluid">
               <div class="row">
-
+/
                 <div class="col-md-4">
                   <div class="row">
+<<<<<<< HEAD
+                    <img src="p1.jpg" class="col-md-12">
+=======
                     <img src="./images/p1.jpeg" class="col-md-12">
+>>>>>>> upstream/master
                   </div>
                 </div>
 
                 <div class="col-md-4">
                   <div>
-                    <p class="text_head">Description</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p class="text_head">Bubble Gum Juice</p>
+                    <p>
+                   
+                   Our eliquid is made in the UK and come in a variety of exotic flavours at different nicotine strengths.  This allows you to find a blend and nicotine strength to your desire.  Our flavours are sourced from around the world for the best in scent and our blend has been perfected to give the smooth hit on the throat, great flavour with plenty of vapour
+                   
+                    </p>
                   </div>
                   <div class="row">
+					<form class="navbar-form" action="http://localhost:8080/payment">
 
                     <div class="col-md-6 userprice">
-                      <span>PRICE GBP</span><span></span>
+                        <span>Suggested price</span><input type="number" placeholder="10 GBP">
                     </div>
 
                     <div class="col-md-6">
-                        <form class="navbar-form">
-                          <button onclick="buying('item1');" class="btn btn-default buybutton">BUY</button>
-                        </form>                      
-                    </div>
 
+                        <!--form action="http://google.com">
+                                <input type="submit" value="Go to Google">
+                            </form-->
+
+
+                        
+                          <input type="submit" class="btn btn-default buybutton" value="BUY">
+                                             
+                    </div>
+					  </form>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -201,25 +216,28 @@
 
                 <div class="col-md-4">
                   <div class="row">
-                    <img src="images/p2.JPEG" class="col-md-12">
+                    <img src="p2.jpg" class="col-md-12">
                   </div>
                 </div>
 
                 <div class="col-md-4">
                   <div>
-                    <p class="text_head">Description</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p class="text_head">Sherbet Dip Dab x10 Packs</p>
+                    <p>The Dip Dab by Barratt. They consist of a small packet of sherbet, with a lollipop sealed into the bag. Once the lollipop has been licked, it can be dipped into the sherbet and then sucked clean, alternatively it can simply be used to shovel the sherbet into the mouth. </p>
                   </div>
                   <div class="row">
 
                     <div class="col-md-6 userprice">
-                      <span>GBP</span><span></span>
+                        <span>Suggested price</span><input type="number" placeholder="10 GBP">
                     </div>
 
                     <div class="col-md-6">
-                        <form class="navbar-form">
-                          <button onclick="buying('item2');"  class="btn btn-default buybutton">BUY</button>
-                        </form>                      
+                    
+                        <form class="navbar-form" action="http://localhost:8080/payment">
+                           <input type="submit" class="btn btn-default buybutton" value="BUY">
+                       </form>
+                    
+                    
                     </div>
 
                   </div>
@@ -236,25 +254,32 @@
 
                 <div class="col-md-4">
                   <div class="row">
-                    <img src="images/Products/p2.jpeg" class="col-md-12">
+                    <img src="p3.jpg" class="col-md-12">
                   </div>
                 </div>
 
                 <div class="col-md-4">
                   <div>
-                    <p class="text_head">Description</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p class="text_head">Mashed Potato</p>
+                    <p> 
+                    
+                    Mashed potato is a simple accompaniment to any meal, and really quick and easy to make. Everyone loves good mashed potato. Boiled Desiree potatoes for best results.
+                    
+                    </p>
                   </div>
                   <div class="row">
 
                     <div class="col-md-6 userprice">
-                      <span>GBP</span><span></span>
+                        <span>Suggested price</span><input type="number" placeholder="10 GBP">
                     </div>
 
                     <div class="col-md-6">
-                        <form class="navbar-form">
-                          <button onclick="buying('item3');"  class="btn btn-default buybutton">BUY</button>
-                        </form>                      
+                    
+                        <form class="navbar-form" action="http://localhost:8080/payment">
+                                  <input type="submit" class="btn btn-default buybutton" value="BUY">
+                        </form>
+                    
+                    
                     </div>
 
                   </div>
@@ -271,25 +296,32 @@
 
                 <div class="col-md-4">
                   <div class="row">
-                    <img src="images/Products/p2.jpeg" class="col-md-12">
+                    <img src="p4.jpg" class="col-md-12">
                   </div>
                 </div>
 
                 <div class="col-md-4">
                   <div>
-                    <p class="text_head">Description</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p class="text_head">Fish and Chips</p>
+                    <p>
+                   
+                   Is there anything more comforting in British cuisine than Fish And Chips? No. Be it in local chippy or gastro form, here's why our national classic perennially makes life seem worthwhile even when it probably isn't.
+                  
+                    </p>
                   </div>
                   <div class="row">
 
                     <div class="col-md-6 userprice">
-                      <span>GBP</span><span></span>
+                        <span>Suggested price</span><input type="number" placeholder="10 GBP">
                     </div>
 
                     <div class="col-md-6">
-                        <form class="navbar-form">
-                          <button onclick="buying('item4');"  class="btn btn-default buybutton">BUY</button>
-                        </form>                      
+                    
+                        <form class="navbar-form" action="http://localhost:8080/payment">
+                               <input type="submit" class="btn btn-default buybutton" value="BUY">
+                        </form>
+                    
+                    
                     </div>
 
                   </div>
@@ -397,7 +429,7 @@
 
 
 <!--Javscript Libraries-->
-  <script src="../public/Scripts/welcome.js"></script>
+  <script src="welcome.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 

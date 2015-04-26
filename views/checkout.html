@@ -5,7 +5,7 @@
 
   <!--CSS Libraries-->
 
-  <link rel="stylesheet" type="text/css" href="../public/Stylesheets/welcome.css">
+  <link rel="stylesheet" type="text/css" href="welcome.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -48,8 +48,8 @@
         <!--THE LOGOUT BUTTON -->
 
         <div id="logout" class="headerstuff col-md-4" >
-          <form class="navbar-form">
-          	<button id="logoutbutton" onclick="javascript:location.href='index.html'" class="menutitle btn btn-lg btn-danger">Logout</button>
+          <form class="navbar-form" action="http://localhost:8080/"   >
+          	<button id="logoutbutton" class="menutitle btn btn-lg btn-danger">Logout</button>
           </form>
         </div>            
             
@@ -77,12 +77,18 @@
         <p> 
           You just bought something!
         </p>
+<<<<<<< HEAD
+        <form class="navbar-form" action="http://localhost:8080/logged#users"   >
+            <button id="gobackbutton" class="btn btn-lg btn-success">Go back</button>
+        </form>
+=======
 
         <button id="gobackbutton" onclick="javascript:location.href='logged.html#users'" class="btn btn-lg btn-success">Go back</button>
 
+>>>>>>> upstream/master
       </div>
 
-      <div class="col-md-6 about">
+      <div class="col-md-6 about"m
 
        
 
