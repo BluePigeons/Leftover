@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leftover...</title>
+
+  <!--CSS Libraries-->
+
+  <link rel="stylesheet" type="text/css" href="../public/Stylesheets/welcome.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+</head>
+<body>
+
+<!-- THE HEADER STUFF -->
+
+  <div id="thetop" class="headerstuff">
+
+  <!--Sticky Navbar stuffs-->
+  <nav id="navbar">
+
+    <div id="thenav" class="container-fluid headerstuff">
+      <div class="row">
+            
+        <!--THE LOGO-->
+
+        <div id="logo" class="headerstuff col-md-4 ">
+          <div id="lpbox">
+            <h1 id="logophrase" >Leftover...</h1>
+          </div>
+
+          <div id="tagbox">
+            <p id="tagline">Reducing waste...</p>
+          </div>
+        </div>
+
+        <!--THE NON LOGGED IN PAGES-->
+
+        <div id="notthelogin" class="headerstuff col-md-4">
+          <div >
+
+          </div>
+
+        </div>
+
+        <!--THE LOGOUT BUTTON -->
+
+        <div id="logout" class="headerstuff col-md-4" >
+          <form class="navbar-form">
+          	<button id="logoutbutton" onclick="javascript:location.href='index.html'" class="btn btn-default">Logout</button>
+          </form>
+        </div>            
+            
+      </div>
+    </div>
+
+  </nav>
+
+  </div>
+
+<!-- THE PAYMENT PAGE -->
+
+<div ng-app="myApp" ng-controller="customersCtrl" class="page">
+  <div class="content">
+        <form id="checkout" method="post" action="javascript:location.href='checkout.html'" class="content">
+              <div id="dropin"></div>
+              <input type="submit" value="Pay Now" class="tmp">
+        </form>
+  </div>
+
+  <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+            
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js'></script>
+
+  <script>
+      var app = angular.module('myApp', []);
+      app.controller('customersCtrl', function($scope, $http) {
+          $http.get("https://713d2682.ngrok.com/client_token")
+              .then(function (token) {
+              braintree.setup(
+              token.data,'dropin', {
+                  container: 'dropin'
+              });
+          });
+      });
+  </script>
+
+</div>
+
+<!--Javscript Libraries-->
+  <script src="../public/Scripts/welcome.js"></script>
+
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</body>
+</html>
