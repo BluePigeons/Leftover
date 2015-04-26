@@ -31,32 +31,25 @@ app.use(bodyParser.urlencoded({
 
 app.get('/', function (req, res) {
     res.render('index');
-    console.log('OK');
 });
 
 app.get('/login', function (req, res) {
     res.render('logged');
-    console.log('OK');
 });
 
 app.get('/payment', function (req, res) {
     res.render('payment');
-    console.log('OK');
 });
 
 app.get('/welcome', function (req, res) {
     res.render('welcome');
-    console.log('Welcome');
 });
 
 app.get('/braintree', function (req, res){
     res.render('braintree');
-    console.log('braintree');  
 });
 
 app.post('/checkout', function (req, res){
-    console.log('checkout');
-    console.log(req.body.payment_method_nonce);
     var nonce = req.body.payment_method_nonce;
     
     gateway.transaction.sale({
@@ -66,24 +59,26 @@ app.post('/checkout', function (req, res){
        
     });
     res.render('checkout');
-    console.log('checkout');  
 });
 
-/*var Meal = require('./models/meal')
+var Meal = require('./models/meal')
 app.post('/api/meal', function(req, res, next){
+    console.log(req.body);
+    console.log(req.body.postedby);
+
     var meal = new Meal({
-        posted_By : req.body.postedby,
-        imageLink : req.body.imagelink,
-        expiration: req.body.expiration
+        postedby : req.body.postedby
+        //imageLink : req.body.imagelink,
+        //expiration: req.body.expiration
     })
     meal.save(function (err, meal)
     {
-        if(err) return { return next(err)
+        if(err) { return next(err)
     }
         res.json(201, meal)
     })    
 })
-*/
+
 MongoClient.connect('mongodb://127.0.0.1:27017/test', function(err, db) {
 	if (err) throw err;
 
