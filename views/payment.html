@@ -34,9 +34,7 @@
             <h1 id="logophrase" >Leftover...</h1>
           </div>
 
-          <div id="tagbox">
-            <p id="tagline">Reducing waste...</p>
-          </div>
+
         </div>
 
         <!--THE NON LOGGED IN PAGES-->
@@ -52,7 +50,7 @@
 
         <div id="logout" class="headerstuff col-md-4" >
           <form class="navbar-form">
-          	<button id="logoutbutton" onclick="javascript:location.href='index.html'" class="btn btn-default">Logout</button>
+          	<button id="logoutbutton" onclick="javascript:location.href='index.html'" class="menutitle btn btn-lg btn-danger">Logout</button>
           </form>
         </div>            
             
@@ -68,8 +66,12 @@
 <div ng-app="myApp" ng-controller="customersCtrl" class="page" id="paypage">
   <div class="content">
         <form id="checkout" method="post" action="javascript:location.href='checkout.html'" class="content">
+            <p>Please confirm payment below</p>
+
+            <img src="javascript:location.href='../public/Stylesheets/images/'+(location)+'jpg'">
+
               <div id="dropin"></div>
-              <input type="submit" value="Pay Now" class="tmp">
+              <input type="submit" value="Pay Now" class="tmp btn btn-lg btn-success">
         </form>
   </div>
 

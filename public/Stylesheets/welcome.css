@@ -3,7 +3,7 @@
     overflow: scroll;
     padding: 200px 50px;
 	background-image: url('images/about.jpg');
-	height: 1000px;
+	min-height: 1000px;
 	margin: 0 auto;
 }
 
@@ -12,7 +12,7 @@
     overflow: scroll;
     padding: 200px 50px;
 	background-image:url('images/signingup.jpg');
-	height: 1000px;
+	min-height: 1000px;
 	margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@
     overflow: scroll;
     padding: 200px 50px;
 	background-image:url('images/users.jpg');
-	height: 1000px;
+	min-height: 1000px;
 	margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@
     overflow: scroll;
     padding: 200px 50px;
 	background-image:url('images/retailers.jpg');
-	height: 1000px;
+	min-height: 1000px;
 	margin: 0 auto;
 }
 
@@ -48,7 +48,8 @@
     overflow: scroll;
     padding: 200px 50px;
 	background-image:url('images/checkoutpage.jpg');
-	height: 1000px;
+	background-size: cover;
+	min-height: 1000px;
 	margin: 0 auto;
 }
 
@@ -57,7 +58,8 @@
     overflow: scroll;
     padding: 200px 50px;
 	background-image:url('images/paypage.jpg');
-	height: 1000px;
+	background-size: cover;
+	min-height: 1000px;
 	margin: 0 auto;
 }
 
@@ -86,13 +88,18 @@ body {
 
 }
 
+#logoutbutton {
+	width: 200px;
+}
+
 .menutitle {
 	font-size: 25px;
 }
 
 .formthings {
 	//padding: 15px;
-	//margin: 2px;
+	margin-top: 10px;
+	margin-bottom: 50px;
 }
 
 .page {
@@ -113,7 +120,7 @@ body {
 }
 
 .about {
-	height:200px;
+	min-height:200px;
 }
 
 //Header stuffs
@@ -157,28 +164,15 @@ nav {
 	position: absolute;
 	//bottom: 20px;
 	//z-index: 0;
-	left: 0px;
-}
-
-#tagbox {
-	position: absolute;
-	//bottom: 0px;
-	//z-index: 1;
-	width: 300px;
-	left: 30px;
+	left: 20px;
 }
 
 #logophrase {
 	font-family: 'Indie Flower', cursive;
 	font-size: 5vw;
-	color: #4C1A00;
+	color: white;
 }
 
-#tagline {
-	font-size: 40px;
-	width: 300px;
-
-}
 
 // The pages
 
@@ -188,26 +182,29 @@ nav {
 
 //login form at the top of the page
 
+#login {
+	top: 0px;
+}
 
 #emailogin {
-	position: absolute;
-	bottom: 110px;
+	//position: absolute;
+	margin-top: 0px;
 	width: 200px;
 	height: 30px;
 	//right: 50px;
 }
 
 #passwordlogin {
-	position: absolute;
-	bottom: 70px;
+	//position: absolute;
+	margin-top: 5px;
 	width: 200px;
 	height: 30px;
 	//right: 50px;
 }
 
 #loginbutton {
-	position: absolute;
-	bottom: 30px;
+	//position: absolute;
+	margin-top: 5px;
 	height: 30px;
 	//right: 50px;
 
@@ -232,7 +229,7 @@ nav {
     padding: 200px 50px;
 	background-image:url('http://upload.wikimedia.org/wikipedia/commons/d/d3/Turnip_2622027.jpg') 50% 0 no-repeat fixed;
 	background-size: cover;
-	height: 1000px;
+	min-height: 1000px;
 	margin: 0 auto;
 }
 
@@ -308,7 +305,7 @@ nav {
 	//bottom:0px;
 }
 
-#userprice {
+.userprice {
 	font-size: 30px;
 }
 
@@ -320,4 +317,21 @@ nav {
 #filters {
 	width:100%;
 	margin: 50px;
+	font-size: 20px;
+}
+
+#pricefilter {
+	margin: auto;
+	width: 40px;
+	font-size: 20px;
+}
+
+#radiusfilter {
+	margin: auto;
+	width: 40px;
+	font-size: 20px;
+}
+
+#signcontent {
+	min-height: 600px;
 }
