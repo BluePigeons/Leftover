@@ -9,77 +9,64 @@ body {
 
 }
 
+.page {
+	height:100vh;
+	border-bottom-color: #2e2e2e;
+}
+
+.abouttext {
+	top: 400px;
+	height: 100vh;
+
+}
+.content {
+	top:150px;
+	min-height:200px;
+}
+
+.about {
+	height:200px;
+}
+
+//Header stuffs
+
+.navbar {
+	position: fixed;
+	height: 200px;
+}
+
+nav {
+	background: #2e2e2e
+}
+
 #thetop {
 	position: fixed;
-	top: 100px;
+	top: 0px;
 	width: 100%;
 	z-index: 1;
-}
-
-//login form at the top of the page
-
-#login {
-	//position: absolute;
-	//top: 10;
-	//right: 0;
-	height: 200px;
-	background-color: white;
-	z-index: 1;
-}
-
-#emailogin {
-	position: absolute;
-	bottom: 110px;
-	width: 200px;
-	height: 30px;
-	right: 50px;
-}
-
-#passwordlogin {
-	position: absolute;
-	bottom: 70px;
-	width: 200px;
-	height: 30px;
-	//right: 50px;
-}
-
-#loginbutton {
-	position: absolute;
-	bottom: 30px;
-	height: 30px;
-	//right: 50px;
 
 }
 
-//the header stuffs
-
-#headingbanner {
-	position: absolute;
-	background-color: white;
-	top: 0px;
-	height: 200px;
-	z-index: 1;
-}
-
+// Logo stuff
 
 #logo {
 	position: absolute;
-	height: 200px;
+	min-height: 200px;
 	left: 375px;
-	top: 0px;
+	//top: 0px;
 		
 }
 
 #lpbox {
 	position: absolute;
-	bottom: 20px;
+	//bottom: 20px;
 	//z-index: 0;
 	left: 0px;
 }
 
 #tagbox {
 	position: absolute;
-	bottom: 0px;
+	//bottom: 0px;
 	//z-index: 1;
 	width: 300px;
 	left: 30px;
@@ -87,7 +74,7 @@ body {
 
 #logophrase {
 	font-family: 'Indie Flower', cursive;
-	font-size: 150px;
+	font-size: 5vw;
 	color: #4C1A00;
 }
 
@@ -97,55 +84,69 @@ body {
 
 }
 
-//navigation bar
+// The pages
+.menutitle {
+	font-size: 100px;
+}
 
-#thenav {
-	position: fixed;
-	top: 200px;
-	width: 100%;
-	background-color: green;
+#notthelogin {
+
+}
+
+//login form at the top of the page
+
+#login {
+
+	position: absolute;
+	right:0px;
+	top:0
 	z-index: 1;
 }
 
-//the about page stuffs
-
-#about {
-	top: 800px;
-	margin: 0px;
-	//background-image: url(#);
-	background:url('#') 50% 0 no-repeat fixed;
-	background-size: cover;
-	height: 1000px;
-	//z-index: -1;
+#emailogin {
+	position: absolute;
+	bottom: 110px;
+	width: 200px;
+	height: 30px;
+;
 }
 
-#abouttext {
-	background-color: white;
-	width: 50%;
+#passwordlogin {
 	position: absolute;
-	border-radius: 10px;
-	margin-left: 40px;
-	padding: 10px; 
-	top: 350px;
-	//z-index: -1;
+	bottom: 70px;
+	width: 200px;
+	height: 30px;
 
+}
+
+#loginbutton {
+	position: absolute;
+	bottom: 30px;
+	height: 30px;
+
+
+}
+
+
+//the about page stuffs
+
+
+#aboutustitle {
+	z-index: 1;
 }
 
 
 //Sign Up Form
 
 #signup {
-	background-image: url("#");
-	background:url('#') 50% 0 no-repeat fixed;
+
+	//background:url('#') 50% 0 no-repeat fixed;
 	background-size: cover;
-	height: 1000px;
+	height: 100vh;
 	margin: 0 auto;
     overflow: hidden;
     padding: 200px 50px;
-    //z-index: -1;
-	//width: 100%;
-	//position: fixed;
-	//top: 4000px;
+
 
 }
 
@@ -185,37 +186,25 @@ body {
 
 
 #TCs {
-	background-image: url("#");
-	background:url('#') 50% 0 no-repeat fixed;
-	background-size: cover;
-	height: 1000px;
+	//background-image: url("#");
+	//ackground:url('#') 50% 0 no-repeat fixed;
+	//background-size: cover;
 	margin: 0 auto;
-    overflow: hidden;
     padding: 200px 50px;
 }
 
 #TCtext {
-	background-color: white;
-	width: 50%;
-	position: absolute;
 	border-radius: 10px;
 	margin-left: 40px;
 	padding: 10px; 
-	top: 350px;
-	//z-index: -1;
 
 }
 
 
 //CLASSES!!!
 
-.logoimg {
-	position:absolute;
-	height: 200px;
-}
-
 .text_head {
-	font-size: 30px;
+	font-size: 2vw;
 }
 
 .form-group {
@@ -228,4 +217,7 @@ body {
 	color: red;
 }
 
-//
+.headerstuff {
+	//min-height:150px;
+	//bottom:0px;
+}

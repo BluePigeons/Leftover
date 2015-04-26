@@ -1,125 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leftover...</title>
+
+  <!--CSS Libraries-->
+
+  <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/welcome.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+</head>
+<body>
+
 <!-- THE HEADER STUFF -->
 
-<div id="thetop" >
+  <div id="thetop" class="headerstuff">
 
-<!--Sticky Navbar stuffs-->
-  <div id="thenav">
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-       
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+  <!--Sticky Navbar stuffs-->
+  <nav id="navbar">
 
-            <!--THE LOGO-->
-
-            <div id="logo" class="col-md-4">
-              <div id="lpbox">
-                <h1 id="logophrase" >Leftover...</h1>
-              </div>
-
-              <div id="tagbox">
-                <p id="tagline">Reducing waste...</p>
-              </div>
-            </div>
-
-            <!--THE NON LOGGED IN PAGES-->
-
-            <div id="notthelogin" class="col-md-4">
-
-              <li >             
-                <a href="#" role="button" >About</a>
-              </li>
-
-              <li >             
-                <a href="#" role="button" >Users</a>          
-              </li>
-
-              <li >             
-                <a href="#" role="button" >Retailers</a>          
-              </li>
+    <div id="thenav" class="container-fluid headerstuff">
+      <div class="row">
             
-              <li >         
-                <a href="#" role="button" >Terms and Conditions</a>          
-              </li>
+        <!--THE LOGO-->
 
-            </div>
+        <div id="logo" class="headerstuff col-md-4 ">
+          <div id="lpbox">
+            <h1 id="logophrase" >Leftover...</h1>
+          </div>
 
-            <!--THE LOGOUT BUTTON -->
-
-            <div id="login" class="col-md-4" style="position: absolute;right:0px;top:0">
-              <form class="navbar-form" role="search">
-
-              <button id="loginbutton"type="submit" class="btn btn-default">Login</button>
-
-              </form>
-            </div>            
-
-          </ul>
+          <div id="tagbox">
+            <p id="tagline">Reducing waste...</p>
+          </div>
         </div>
-        
+
+        <!--THE NON LOGGED IN PAGES-->
+
+        <div id="notthelogin" class="headerstuff col-md-4">
+          <div class="row">
+            <span>            
+              <button onclick="jumpto('aboutpage');" type="button" class="menutitle col-md-3 btn btn-info">About</button>
+            </span>
+
+            <span>            
+              <button onclick="jumpto('users');" type="button" class="menutitle col-md-3 btn btn-info">Users</button>         
+            </span>
+
+            <span>            
+              <button onclick="jumpto('retailers');" type="button" class="menutitle col-md-3 btn btn-info">Retailers</button>         
+            </span>
+            
+            <span>        
+              <button onclick="jumpto('TCs');" type="button" class="menutitle col-md-3 btn btn-info">Terms and Conditions</button>         
+            </span>
+          </div>
+
+        </div>
+
+        <!--THE LOGOUT FORM -->
+
+        <div id="logout" class="headerstuff col-md-4" >
+          <form class="navbar-form">
+          <button id="logoutbutton" onclick="javascript:location.href='index.html'" class="btn btn-default">Logout</button>
+          </form>
+        </div>            
+            
       </div>
-    </nav>
-  </div>
-
-</div>
-
-<!-- THE ABOUT PAGE -->
-
-<div id="about" >
-
-
-  <div id="abouttext" >
-
-    <div id=aboutustitle >
-      <p class="text_head" >ABOUT US</p>
     </div>
 
-    <div>
-      <p> 
-        Reducing waste by allowing local businesses to give away products reduced to clear at the end of the day by alerting nearby customers of the products so they can buy them and they don't go to landfill.
-      </p>
-    </div>
+  </nav>
 
   </div>
 
-  <div>
+<div id="mainpages">
 
-    <img src="#" >
+  <!-- THE ABOUT PAGE -->
 
-  </div>
-
-</div>
+  <div id="aboutpage" class="container-fluid page">
 
 
-<!-- THE SIGN UP PAGE -->
+    <div class="row">
+    <div class="abouttext">
 
-<div id="signup">
+      <div class="col-md-6 content about">
 
+        <div id="aboutustitle" >
+          <p class="text_head" >ABOUT US</p>
+        </div>
 
+        <p> 
+          Reducing waste by allowing local businesses to give away products reduced to clear at the end of the day by alerting nearby customers of the products so they can buy them and they don't go to landfill.
+        </p>
+      </div>
 
-</div>
+      <div class="col-md-6 about">
 
-<!-- TERMS & CONDITIONS -->
+        <img src="#" >
 
-<div id="TCs">
+      </div>
 
-  <div id="TCtext" >
-
-    <div id=TCtitle >
-      <p class="text_head" >TERMS AND CONDITIONS</p>
     </div>
-
-    <div>
-      <ol>
-        
-      <li>You shouldn't bother reading the Terms and Conditions properly, I mean who actually does that?</li>
-      <li>Something something small print...</li>
-      <li>Mumble mumble security and privacy issues mumble mumble</li>
-      <li>Cristiano!</li>
-
-      </ol>
     </div>
 
   </div>
 
+
+
+  <!-- THE USERS PAGE -->
+
+  <div id="users" class="container-fluid page">
+
+    <div class="content">
+
+      <div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- THE RETAILERS PAGE -->
+
+  <div id="retailers" class="container-fluid page">
+
+    <div class="content">
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TERMS & CONDITIONS -->
+
+  <div id="TCs" class="container-fluid page">
+
+    <div id="TCtext" class="row">
+    <div class ="col-md-12">
+    <div class="content">
+
+      <div id="TCtitle" >
+        <p class="text_head" >TERMS AND CONDITIONS</p>
+      </div>
+
+      <div>
+        <ol>
+          
+        <li>You shouldn't bother reading the Terms and Conditions properly, I mean who actually does that?</li>
+        <li>Something something small print...</li>
+        <li>Mumble mumble security and privacy issues mumble mumble</li>
+        <li>Cristiano!</li>
+
+        </ol>
+      </div>
+
+    </div>
+    </div>
+    </div>
+
+  </div>
+
 </div>
+
+
+<!--Javscript Libraries-->
+  <script src="../../assets/javascripts/welcome.js"></script>
+
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</body>
+</html>
