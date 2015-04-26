@@ -30,7 +30,7 @@
             
         <!--THE LOGO-->
 
-        <div id="logo" class="headerstuff col-md-4 ">
+        <div class="logo headerstuff col-md-4 ">
           <div id="lpbox">
             <h1 id="logophrase" >Leftover...</h1>
           </div>
@@ -45,15 +45,18 @@
         <div id="notthelogin" class="headerstuff col-md-4">
           <div class="row">
             <span>            
-              <button onclick="jumpto('aboutpage');" type="button" class="menutitle col-md-4 btn btn-info">About</button>
+              <button onclick="jumpto('aboutpage');" type="button" class="menutitle btn-lg col-md-4 btn btn-info">About</button>
             </span>
 
             <span>            
-              <button onclick="jumpto('signup');" type="button" class="menutitle col-md-4 btn btn-info">Sign Up</button>         
+              <button onclick="jumpto('signup');" type="button" class="menutitle btn-lg col-md-4 btn btn-info">Sign Up</button>         
             </span>
             
             <span>        
-              <button onclick="jumpto('TCs');" type="button" class="menutitle col-md-4 btn btn-info">Terms and Conditions</button>         
+              <button onclick="jumpto('TCs');" type="button" class="menutitle btn-lg col-md-4 btn btn-info">
+              <p>Terms and</p>
+              <p> Conditions</p>
+              </button>         
             </span>
           </div>
 
@@ -61,15 +64,21 @@
 
         <!--THE LOGIN FORM -->
 
-        <div id="login" class="headerstuff col-md-4" >
+        <div id="login" class="login headerstuff col-md-4" >
           <form class="navbar-form" role="search">
-          <div class="form-group">
+
+          <div class="form-group" id="emailogin">
             <input id="emailogin" type="text" class="form-control" placeholder="Email Address">
           </div>
-          <div class="form-group">
+
+          <div class="form-group" id="passwordlogin">
             <input id="passwordlogin" type="text" class="form-control" placeholder="Password">
           </div>
-          <button id="loginbutton"type="submit" class="btn btn-default" onclick="javascript:location.href='logged.html'">Login</button>
+
+          <div id="loginbutton">
+            <button id="loginbutton"type="submit" class="btn btn-default" onclick="javascript:location.href='logged.html'">Login</button>
+          </div>
+
           </form>
         </div>            
             
@@ -128,20 +137,20 @@
         <form >
 
           <!-- Explanatory text-->
-          <div>
+          <div class="">
             <p>Please fill in the form below to register with Leftover:</p>
             <p class="smallprint">All fields marked with asterisk * are compulsory</p>
           </div>
 
           <!--NAMES-->
-          <div id="name" class="form-inline">
+          <div id="name" class="form-inline ">
 
-            <div class="form-group" id="firstname">
+            <div class="form-group formthings" id="firstname">
               <label class="FormTitle ">Forename* </label>
               <input id="firstname" type="text" class="form-control" placeholder="First Name">
             </div>
 
-            <div class="form-group" id="surname">
+            <div class="form-group formthings" id="surname">
               <label class="FormTitle ">Surname* </label>
               <input id="surname" type="text" class="form-control" placeholder="Surname">
             </div>
@@ -151,7 +160,7 @@
           <!--EMAIL STUFF 
                 Maybe implement SendGrid stuff here later if spare time?
           -->
-          <div class="form-group" id="emailsignup">
+          <div class="form-group formthings" id="emailsignup">
             <label class="FormTitle">Email Address* </label>
             <input id="emailsignup" type="text" class="form-control" placeholder="Email Address">
           </div>
@@ -161,12 +170,12 @@
           -->
           <div id="passwordstuff"
 
-            <div class="form-group" id="passwordsignup">
+            <div class="form-group formthings" id="passwordsignup">
               <label class="FormTitle">Password* </label>
               <input id="passwordsignup" type="text" class="form-control" placeholder="Password">
             </div>
 
-            <div class="form-group" id="passwordconfirm">
+            <div class="form-group formthings" id="passwordconfirm">
               <label class="FormTitle">Confirm Password* </label>
               <input id="passwordconfirm" type="text" class="form-control" placeholder="Confirm Password">
             </div>
@@ -174,7 +183,7 @@
           </div>
 
           <!--DEFAULT PREFERENCES-->
-          <div class="form-group" id="defaultradius">
+          <div class="form-group formthings" id="defaultradius">
             <label class="FormTitle">Default Radius </label>
             <input id="defaultradius" type="text" class="form-control" placeholder="How Nearby?">
             <span>  Miles</span>
@@ -198,7 +207,7 @@
 
           <!-- THE SUBMIT BUTTON -->
 
-          <div id="signupbtn"> 
+          <div id="signupbtn" class="formthings"> 
             <button type="submit" class="btn btn-default">Sign Up</button>
           </div>
 
@@ -243,9 +252,7 @@
 <!--Javscript Libraries-->
   <script src="../public/Scripts/welcome.js"></script>
 
-  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-
-  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 

@@ -1,9 +1,84 @@
+#aboutpage {
+
+    overflow: scroll;
+    padding: 200px 50px;
+	background-image: url('images/about.jpg');
+	height: 1000px;
+	margin: 0 auto;
+}
+
+#signup {
+
+    overflow: scroll;
+    padding: 200px 50px;
+	background-image:url('images/signingup.jpg');
+	height: 1000px;
+	margin: 0 auto;
+}
+
+#TCs {
+
+    overflow: scroll;
+    padding: 200px 50px;
+	background-image:url('images/termsandconds.jpg');
+	height: 1000px;
+	margin: 0 auto;
+}
+
+#users {
+
+    overflow: scroll;
+    padding: 200px 50px;
+	background-image:url('images/users.jpg');
+	height: 1000px;
+	margin: 0 auto;
+}
+
+#retailers {
+
+    overflow: scroll;
+    padding: 200px 50px;
+	background-image:url('images/retailers.jpg');
+	height: 1000px;
+	margin: 0 auto;
+}
+
+#checkoutpage {
+
+    overflow: scroll;
+    padding: 200px 50px;
+	background-image:url('images/checkoutpage.jpg');
+	height: 1000px;
+	margin: 0 auto;
+}
+
+#paypage {
+
+    overflow: scroll;
+    padding: 200px 50px;
+	background-image:url('images/paypage.jpg');
+	height: 1000px;
+	margin: 0 auto;
+}
+
 .tmp {
 	margin-top: 200px;
 }
 
+.login {
+	position: absolute;
+	//top: 10;
+	height: 100px;
+	//z-index: 1;
+}
+
+
+.menutitle {
+	height: 100px;
+}
+
 body {
-	//background-image: url("#");
+
 }
 
 * {
@@ -11,10 +86,18 @@ body {
 
 }
 
+.menutitle {
+	font-size: 25px;
+}
+
+.formthings {
+	//padding: 15px;
+	//margin: 2px;
+}
+
 .page {
-	height:100vh;
-	background:url('http://www.potatoes.com/files/5713/4202/4172/07.jpg') 50% 0 no-repeat fixed;
-	background-size: cover;
+	//height:100vh;
+	top: 150px;
 }
 
 .abouttext {
@@ -23,8 +106,8 @@ body {
 
 }
 .content {
-	top:150px;
 	min-height:200px;
+	margin-top: 150px;
 }
 
 .about {
@@ -60,9 +143,9 @@ nav {
 
 // Logo stuff
 
-#logo {
+.logo {
 	position: absolute;
-	min-height: 200px;
+	height: 200px;
 	left: 375px;
 	//top: 0px;
 		
@@ -96,9 +179,6 @@ nav {
 }
 
 // The pages
-.menutitle {
-	font-size: 100px;
-}
 
 #notthelogin {
 
@@ -106,20 +186,13 @@ nav {
 
 //login form at the top of the page
 
-#login {
-
-	position: absolute;
-	right:0px;
-	top:0
-	z-index: 1;
-}
 
 #emailogin {
 	position: absolute;
 	bottom: 110px;
 	width: 200px;
 	height: 30px;
-;
+	//right: 50px;
 }
 
 #passwordlogin {
@@ -127,14 +200,14 @@ nav {
 	bottom: 70px;
 	width: 200px;
 	height: 30px;
-
+	//right: 50px;
 }
 
 #loginbutton {
 	position: absolute;
 	bottom: 30px;
 	height: 30px;
-
+	//right: 50px;
 
 }
 
@@ -144,6 +217,8 @@ nav {
 
 #aboutustitle {
 	z-index: 1;
+	top:300px;
+
 }
 
 
@@ -151,13 +226,12 @@ nav {
 
 #signup {
 
-	background:url('/../../app/images/signingup.jpg')
-	height: 100vh;
-	margin: 0 auto;
-    overflow: hidden;
+    overflow: scroll;
     padding: 200px 50px;
-
-
+	background-image:url('http://upload.wikimedia.org/wikipedia/commons/d/d3/Turnip_2622027.jpg') 50% 0 no-repeat fixed;
+	background-size: cover;
+	height: 1000px;
+	margin: 0 auto;
 }
 
 #signupforms {
