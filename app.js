@@ -18,6 +18,7 @@ app.use(stylus.middleware({
     dest: __dirname + '/public'
 }));  
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/Stylesheets/images'));
 
 app.engine('html', cons.swig);
 app.set('view engine', 'html');
@@ -25,6 +26,8 @@ app.set('views', __dirname + "/views");
 
 
 var bodyParser = require('body-parser')
+
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
       extended: true
 }));
@@ -33,7 +36,7 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
-app.get('/login', function (req, res) {
+app.get('/logged', function (req, res) {
     res.render('logged');
 });
 
@@ -61,24 +64,6 @@ app.post('/checkout', function (req, res){
     res.render('checkout');
 });
 
-var Meal = require('./models/meal')
-app.post('/api/meal', function(req, res, next){
-    console.log(req.body);
-    console.log(req.body.postedby);
-
-    var meal = new Meal({
-        postedby : req.body.postedby
-        //imageLink : req.body.imagelink,
-        //expiration: req.body.expiration
-    })
-    meal.save(function (err, meal)
-    {
-        if(err) { return next(err)
-    }
-        res.json(201, meal)
-    })    
-})
-
 MongoClient.connect('mongodb://127.0.0.1:27017/test', function(err, db) {
 	if (err) throw err;
 
@@ -97,6 +82,28 @@ MongoClient.connect('mongodb://127.0.0.1:27017/test', function(err, db) {
 	console.dir("Called findOne");
 
 });
+
+
+
+
+app.use(bodyParser.urlencoded({extended: true}));
+var Meal = require('./models/meal')
+app.post('/meal', function(req, res){
+    console.log(req.body);
+
+
+    var meal = new Meal({
+        postedby : req.body.postedby 
+        //imageLink : req.body.imagelink,
+        //expiration: req.body.expiration
+    })
+    meal.save(function (err, meal)
+    {
+        if(err) { 
+    }
+        res.json(201, meal)
+    })    
+})
 
 //We add here the Braintree credentials
 var gateway = braintree.connect({

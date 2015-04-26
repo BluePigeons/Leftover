@@ -2,7 +2,7 @@
 
     overflow: scroll;
     padding: 200px 50px;
-	background-image: url('images/about.jpg');
+	background-image: url('about.jpg');
 	min-height: 1000px;
 	margin: 0 auto;
 }
@@ -11,7 +11,7 @@
 
     overflow: scroll;
     padding: 200px 50px;
-	background-image:url('images/signingup.jpg');
+	background-image:url('signingup.jpg');
 	min-height: 1000px;
 	margin: 0 auto;
 }
@@ -20,7 +20,7 @@
 
     overflow: scroll;
     padding: 200px 50px;
-	background-image:url('images/termsandconds.jpg');
+	background-image:url('termsandconds.jpg');
 	height: 1000px;
 	margin: 0 auto;
 }
@@ -29,7 +29,7 @@
 
     overflow: scroll;
     padding: 200px 50px;
-	background-image:url('images/users.jpg');
+	background-image:url('users.jpg');
 	min-height: 1000px;
 	margin: 0 auto;
 }
@@ -38,7 +38,7 @@
 
     overflow: scroll;
     padding: 200px 50px;
-	background-image:url('images/retailers.jpg');
+	background-image:url('retailers.jpg');
 	min-height: 1000px;
 	margin: 0 auto;
 }
@@ -47,7 +47,7 @@
 
     overflow: scroll;
     padding: 200px 50px;
-	background-image:url('images/checkoutpage.jpg');
+	background-image:url('checkoutpage.jpg');
 	background-size: cover;
 	min-height: 1000px;
 	margin: 0 auto;
@@ -57,7 +57,7 @@
 
     overflow: scroll;
     padding: 200px 50px;
-	background-image:url('images/paypage.jpg');
+	background-image:url('paypage.jpg');
 	background-size: cover;
 	min-height: 1000px;
 	margin: 0 auto;
