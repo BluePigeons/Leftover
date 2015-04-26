@@ -47,6 +47,14 @@ nav {
 
 }
 
+.ProductDisplay {
+	height: 50vh;
+}
+
+.carousel {
+	height: 50vh;
+}
+
 // Logo stuff
 
 #logo {
@@ -220,4 +228,18 @@ nav {
 .headerstuff {
 	//min-height:150px;
 	//bottom:0px;
+}
+
+#userprice {
+	font-size: 30px;
+}
+
+.buybutton {
+	height: 50px;
+	width: 100px;
+}
+
+#filters {
+	width:100%;
+	margin: 50px;
 }
