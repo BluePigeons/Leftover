@@ -41,6 +41,7 @@ app.get('/logged', function (req, res) {
 });
 
 app.get('/payment', function (req, res) {
+    console.log('get payment');
     res.render('payment');
 });
 
@@ -56,7 +57,7 @@ app.post('/checkout', function (req, res){
     var nonce = req.body.payment_method_nonce;
     
     gateway.transaction.sale({
-          amount: '19.40',
+          amount: '10.00',
           paymentMethodNonce: 'nonce-from-the-client',
     }, function (err, result) {
        

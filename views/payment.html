@@ -5,7 +5,7 @@
 
   <!--CSS Libraries-->
 
-  <link rel="stylesheet" type="text/css" href="../public/Stylesheets/welcome.css">
+  <link rel="stylesheet" type="text/css" href="welcome.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -49,8 +49,8 @@
         <!--THE LOGOUT BUTTON -->
 
         <div id="logout" class="headerstuff col-md-4" >
-          <form class="navbar-form">
-          	<button id="logoutbutton" onclick="javascript:location.href='index.html'" class="menutitle btn btn-lg btn-danger">Logout</button>
+          <form class="navbar-form" action="http://localhost:8080/" >
+          	<button id="logoutbutton" class="menutitle btn btn-lg btn-danger">Logout</button>
           </form>
         </div>            
             
@@ -65,10 +65,10 @@
 
 <div ng-app="myApp" ng-controller="customersCtrl" class="page" id="paypage">
   <div class="content">
-        <form id="checkout" method="post" action="javascript:location.href='checkout.html'" class="content">
+        <form id="checkout" method="post" action="http://localhost:8080/checkout" class="content">
             <p>Please confirm payment below</p>
 
-            <img src="javascript:location.href='../public/Stylesheets/images/'+(location)+'jpg'">
+            <!-- img src="javascript:location.href='../public/Stylesheets/images/'+(location)+'jpg'"-->
 
               <div id="dropin"></div>
               <input type="submit" value="Pay Now" class="tmp btn btn-lg btn-success">
