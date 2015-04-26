@@ -54,6 +54,13 @@ app.post('/checkout', function (req, res){
     console.log('checkout');
     console.log(req.body.payment_method_nonce);
     var nonce = req.body.payment_method_nonce;
+    
+    gateway.transaction.sale({
+          amount: '19.40',
+          paymentMethodNonce: 'nonce-from-the-client',
+    }, function (err, result) {
+       
+    });
     res.render('checkout');
     console.log('checkout');  
 });
@@ -93,30 +100,10 @@ app.get("/client_token", function (req, res) {
       res.send(clientToken);
     });
 });
-//Receive a payment method nonce from your client
-app.post("/purchases", function (req, res) {
-      console.log(req);
-      var nonce = req.body.payment_method_nonce;
-      console.log('purchases')
-        // Use payment method nonce here
-});
-
-//Create a transaction
-//gateway.transaction.sale({
-//  amount: '11.30',
-//    paymentMethodNonce: 'nonce-from-the-client',
-//    }, function (err, result) {
-//});
-
 
 app.get('*', function(req, res){
-	res.status(404).send("Page not found");
+	res.status(404).render("404");
 });
-
-//braintree.setup("CLIENT-TOKEN-FROM-SERVER", "dropin", {
-//      container: "checkout"
-//});
-
 
 app.listen(8080);
 console.log("Express server started on port 8080");
