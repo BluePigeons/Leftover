@@ -34,6 +34,11 @@ app.get('/', function (req, res) {
     console.log('OK');
 });
 
+app.get('/login', function (req, res) {
+    res.render('logged');
+    console.log('OK');
+});
+
 
 app.get('/welcome', function (req, res) {
     res.render('welcome');
