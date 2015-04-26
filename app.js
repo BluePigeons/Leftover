@@ -19,7 +19,7 @@ app.use(stylus.middleware({
 }));  
 app.use(express.static(__dirname + '/public'));
 
-//app.engine('html', cons.swig);
+app.engine('html', cons.swig);
 app.set('view engine', 'html');
 app.set('views', __dirname + "/views");
 
