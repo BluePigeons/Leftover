@@ -34,9 +34,6 @@
             <h1 id="logophrase" >Leftover...</h1>
           </div>
 
-          <div id="tagbox">
-            <p id="tagline">Reducing waste...</p>
-          </div>
         </div>
 
         <!--THE NON LOGGED IN PAGES-->
@@ -44,19 +41,22 @@
         <div id="notthelogin" class="headerstuff col-md-4">
           <div class="row">
             <span>            
-              <button onclick="jumpto('aboutpage');" type="button" class="menutitle col-md-3 btn btn-info">About</button>
+              <button onclick="jumpto('aboutpage');" type="button" class="menutitle col-md-3 btn btn-lg tn-info">About</button>
             </span>
 
             <span>            
-              <button onclick="jumpto('users');" type="button" class="menutitle col-md-3 btn btn-info">Users</button>         
+              <button onclick="jumpto('users');" type="button" class="menutitle col-md-3 btn btn-lg btn-info">Users</button>         
             </span>
 
             <span>            
-              <button onclick="jumpto('retailers');" type="button" class="menutitle col-md-3 btn btn-info">Retailers</button>         
+              <button onclick="jumpto('retailers');" type="button" class="menutitle col-md-3 btn btn-lg btn-info">Retailers</button>         
             </span>
             
             <span>        
-              <button onclick="jumpto('TCs');" type="button" class="menutitle col-md-3 btn btn-info">Terms and Conditions</button>         
+              <button onclick="jumpto('TCs');" type="button" class="menutitle col-md-3 btn btn-lg btn-info">
+              <p>Terms and</p>
+              <p> Conditions</p>
+              </button>         
             </span>
           </div>
 
@@ -66,7 +66,7 @@
 
         <div id="logout" class="headerstuff col-md-4" >
           <form class="navbar-form">
-          <button id="logoutbutton" onclick="javascript:location.href='index.html'" class="btn btn-default">Logout</button>
+          <button id="logoutbutton" onclick="javascript:location.href='index.html'" class="menutitle btn btn-lg btn-danger">Logout</button>
           </form>
         </div>            
             
@@ -96,11 +96,13 @@
         <p> 
           Reducing waste by allowing local businesses to give away products reduced to clear at the end of the day by alerting nearby customers of the products so they can buy them and they don't go to landfill.
         </p>
+        <p>
+          Dance right there you're not sorry 2 a.m. breathe rhode island. Shine two a.m. music The Voice banana quinoa. Muffin Hailee Steinfeld games vote for Taylor so. Basically too late how it ought to be mean streak Emma. Stone high heel girl in the dress car. Marry not a princess history. 13 Management caught onto somehting cheer captain tea. Party thirteen available at Target cursing. Your name never ever getting back together head first.
+        </p>
+
       </div>
 
       <div class="col-md-6 about">
-
-        <img src="#" >
 
       </div>
 
@@ -127,14 +129,18 @@
             </div>
 
             <div class="form-group col-md-3">
-              <input id="radiusfilter" type="" class="form-control">
+              <label>Distance</label>
+              <input id="radiusfilter" type="number" name="quantity" min="0.1" max="30" class="form-control">
+              <span> Miles </span>
             </div>
 
             <div class="form-group col-md-3">
-              <input id="pricefilter" type="" class="form-control">
+              <label>Price Range  </label>
+              <span>GBP </span>
+              <input id="pricefilter" type="number" name="quantity" min="0" max="100" class="form-control">
             </div>
 
-            <button id="filterbutton"type="submit" class="btn btn-default col-md-3" onclick="#">Filter</button>
+            <button id="filterbutton"type="submit" class="btn btn-default btn-lg" onclick="#">Filter</button>
 
           </form>
           </div>
@@ -155,108 +161,143 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
 
-            <div class="item active container-fluid">
+            <div id="item1" class="item active container-fluid">
               <div class="row">
 
                 <div class="col-md-4">
-                  <img src="#"/>
+                  <div class="row">
+                    <img src="images/p1.jpeg" class="col-md-12">
+                  </div>
                 </div>
 
                 <div class="col-md-4">
                   <div>
-                    <p>Description</p>
+                    <p class="text_head">Description</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                   </div>
                   <div class="row">
 
-                    <div id="userprice" class="col-md-6">
+                    <div class="col-md-6 userprice">
                       <span>PRICE GBP</span><span></span>
                     </div>
 
                     <div class="col-md-6">
                         <form class="navbar-form">
-                          <button onclick="javascript:location.href='payment.html'" class="btn btn-default buybutton">BUY</button>
+                          <button onclick="buying('item1');" class="btn btn-default buybutton">BUY</button>
                         </form>                      
                     </div>
 
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <img src="#" />
+                  <img usemap="#" >
                 </div>
 
               </div>
             </div>
 
-            <div class="item container-fluid">
+            <div id="item2" class="item container-fluid">
               <div class="row">
 
                 <div class="col-md-4">
-                  <img src="#"/>
+                  <div class="row">
+                    <img src="images/p2.JPEG" class="col-md-12">
+                  </div>
                 </div>
 
                 <div class="col-md-4">
                   <div>
-                    <p>Description</p>
+                    <p class="text_head">Description</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                   </div>
                   <div class="row">
 
-                    <div class="col-md-6">
-                      <span>£</span><span></span>
+                    <div class="col-md-6 userprice">
+                      <span>GBP</span><span></span>
                     </div>
 
                     <div class="col-md-6">
                         <form class="navbar-form">
-                          <button onclick="#" class="btn btn-default buybutton">BUY</button>
+                          <button onclick="buying('item2');"  class="btn btn-default buybutton">BUY</button>
                         </form>                      
                     </div>
 
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <img src="#" />
+                  <img usemap="" ="#" >
                 </div>
                 
               </div>
             </div>
 
-            <div class="item container-fluid">
+            <div id="item3" class="item container-fluid">
               <div class="row">
 
                 <div class="col-md-4">
-                  <img src="#"/>
+                  <div class="row">
+                    <img src="images/Products/p2.jpeg" class="col-md-12">
+                  </div>
                 </div>
 
                 <div class="col-md-4">
                   <div>
-                    <p>Description</p>
+                    <p class="text_head">Description</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                   </div>
                   <div class="row">
 
-                    <div class="col-md-6">
-                      <span>£</span><span></span>
+                    <div class="col-md-6 userprice">
+                      <span>GBP</span><span></span>
                     </div>
 
                     <div class="col-md-6">
                         <form class="navbar-form">
-                          <button onclick="#" class="btn btn-default buybutton">BUY</button>
+                          <button onclick="buying('item3');"  class="btn btn-default buybutton">BUY</button>
                         </form>                      
                     </div>
 
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <img src="#" />
+                  <img usemap="#" >
                 </div>
                 
               </div>
             </div>
 
-            <div class="item container-fluid">
+            <div id="item4" class="item container-fluid">
               <div class="row">
-                
+
+                <div class="col-md-4">
+                  <div class="row">
+                    <img src="images/Products/p2.jpeg" class="col-md-12">
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div>
+                    <p class="text_head">Description</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                  </div>
+                  <div class="row">
+
+                    <div class="col-md-6 userprice">
+                      <span>GBP</span><span></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <form class="navbar-form">
+                          <button onclick="buying('item4');"  class="btn btn-default buybutton">BUY</button>
+                        </form>                      
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img usemap="#" >
+                </div>   
+
               </div>
             </div>
 
@@ -309,7 +350,7 @@
 
         <div class="form-group">
           <label>Expiry Time</label>
-          <input class="form-control" id="timeinput" placeholder="Time">
+          <input class="form-control" id="timeinput" type="datetime-local" placeholder="Time">
         </div>
 
         <div class="form-group">
@@ -358,9 +399,7 @@
 <!--Javscript Libraries-->
   <script src="../public/Scripts/welcome.js"></script>
 
-  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-
-  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
