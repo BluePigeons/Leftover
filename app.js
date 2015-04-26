@@ -23,6 +23,12 @@ app.engine('html', cons.swig);
 app.set('view engine', 'html');
 app.set('views', __dirname + "/views");
 
+
+var bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({
+      extended: true
+}));
+
 app.get('/', function (req, res) {
     res.render('index');
     console.log('OK');
@@ -41,8 +47,7 @@ app.get('/braintree', function (req, res){
 
 app.post('/checkout', function (req, res){
     console.log('checkout');
-    console.log(req.body);
-
+    console.log(req.body.payment_method_nonce);
     var nonce = req.body.payment_method_nonce;
     res.render('checkout');
     console.log('checkout');  
