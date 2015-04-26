@@ -122,10 +122,13 @@
       <div id="filters" class="container-fluid">
 
           <div class="row">
-          <form class="navbar-form" role="search">
+          <form class="navbar-form col-md-9" role="search">
+
+          <div class="row">
 
             <div class="form-group col-md-3">
-              <input id="tags" type="text" class="form-control" placeholder="Type Of Product">
+              <label>Tags</label>
+              <input id="tags" type="text" data-role="tagsinput" class="form-control" placeholder="e.g. vegetables, sandwiches...">
             </div>
 
             <div class="form-group col-md-3">
@@ -142,6 +145,7 @@
 
             <button id="filterbutton"type="submit" class="btn btn-default btn-lg" onclick="#">Filter</button>
 
+          </div>
           </form>
           </div>
 
@@ -181,6 +185,11 @@
                    
                    Our eliquid is made in the UK and come in a variety of exotic flavours at different nicotine strengths.  This allows you to find a blend and nicotine strength to your desire.  Our flavours are sourced from around the world for the best in scent and our blend has been perfected to give the smooth hit on the throat, great flavour with plenty of vapour
                    
+                    </p>
+                    <p>
+                      <button class="btn btn-xs"value="juice"></button>
+                      <button class="btn btn-xs"value="drink"></button>
+                      <button class="btn btn-xs"value="sweets"></button>
                     </p>
                   </div>
                   <div class="row">
@@ -224,6 +233,10 @@
                   <div>
                     <p class="text_head">Sherbet Dip Dab x10 Packs</p>
                     <p>The Dip Dab by Barratt. They consist of a small packet of sherbet, with a lollipop sealed into the bag. Once the lollipop has been licked, it can be dipped into the sherbet and then sucked clean, alternatively it can simply be used to shovel the sherbet into the mouth. </p>
+                    <p>
+                      <button class="btn btn-xs"value="sweets"></button>
+                      <button class="btn btn-xs"value="sugar"></button>
+                    </p>
                   </div>
                   <div class="row">
 
@@ -266,6 +279,11 @@
                     Mashed potato is a simple accompaniment to any meal, and really quick and easy to make. Everyone loves good mashed potato. Boiled Desiree potatoes for best results.
                     
                     </p>
+                    <p>
+                      <button class="btn btn-xs"value="potato"></button>
+                      <button class="btn btn-xs"value="mash"></button>
+                      <button class="btn btn-xs"value="side"></button>
+                    </p>
                   </div>
                   <div class="row">
 
@@ -307,6 +325,11 @@
                    
                    Is there anything more comforting in British cuisine than Fish And Chips? No. Be it in local chippy or gastro form, here's why our national classic perennially makes life seem worthwhile even when it probably isn't.
                   
+                    </p>
+                    <p>
+                      <button class="btn btn-xs"value="fish"></button>
+                      <button class="btn btn-xs"value="chips"></button>
+                      <button class="btn btn-xs"value="snacks"></button>
                     </p>
                   </div>
                   <div class="row">
@@ -363,7 +386,7 @@
 
         <div class="form-group">
           <label>Tags</label>
-          <input class="form-control" id="taginput" placeholder="Add Tags">
+          <input class="form-control" id="taginput" data-role="tagsinput" class="form-control" placeholder="e.g. vegetables, sandwiches...">
         </div>
 
         <div class="form-group">

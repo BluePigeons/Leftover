@@ -139,73 +139,86 @@
         <form >
 
           <!-- Explanatory text-->
-          <div class="">
-            <p>Please fill in the form below to register with Leftover:</p>
-            <p class="smallprint">All fields marked with asterisk * are compulsory</p>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Please fill in the form below to register with Leftover:</p>
+              <p class="smallprint">All fields marked with asterisk * are compulsory</p>
+            </div>
           </div>
+
+          <div class="row">
+
+          <div class = "col-md-6">
 
           <!--NAMES-->
-          <div id="name" class="form-inline row">
+            <div id="name" class="form-inline row">
 
-            <div class="form-group formthings" id="firstname">
-              <label class="FormTitle ">Forename* </label>
-              <input id="firstname" type="text" class="form-control formthings" placeholder="First Name">
+              <div class="form-group formthings" id="firstname">
+                <label class="FormTitle ">Forename* </label>
+                <input id="firstname" type="text" class="form-control formthings" placeholder="First Name">
+              </div>
+
+              <div class="form-group formthings" id="surname">
+                <label class="FormTitle ">Surname* </label>
+                <input id="surname" type="text" class="form-control formthings" placeholder="Surname">
+              </div>
+
             </div>
 
-            <div class="form-group formthings" id="surname">
-              <label class="FormTitle ">Surname* </label>
-              <input id="surname" type="text" class="form-control formthings" placeholder="Surname">
+            <!--EMAIL STUFF 
+                  Maybe implement SendGrid stuff here later if spare time?
+            -->
+            <div class="form-group formthings row" id="emailsignup">
+              <label class="FormTitle">Email Address* </label>
+              <input id="emailsignup" type="text" class="form-control formthings" placeholder="Email Address">
             </div>
 
           </div>
 
-          <!--EMAIL STUFF 
-                Maybe implement SendGrid stuff here later if spare time?
-          -->
-          <div class="form-group formthings row" id="emailsignup">
-            <label class="FormTitle">Email Address* </label>
-            <input id="emailsignup" type="text" class="form-control formthings" placeholder="Email Address">
+
+          <div class="col-md-6">
+            <!--PASSWORD STUFF
+                  Something something SQL and security something something...
+            -->
+            <div id="passwordstuff" class="row">
+
+              <div class="form-group formthings" id="passwordsignup">
+                <label class="FormTitle">Password* </label>
+                <input id="passwordsignup" type="password" class="form-control formthings" placeholder="Password">
+              </div>
+
+              <div class="form-group formthings" id="passwordconfirm">
+                <label class="FormTitle">Confirm Password* </label>
+                <input id="passwordconfirm" type="password" class="form-control formthings" placeholder="Confirm Password">
+              </div>
+            
+            </div>
+
+            <!--DEFAULT PREFERENCES-->
+            <div class="form-group formthings row" id="defaultradius">
+              <label class="FormTitle">Default Radius </label>
+              <input id="defaultradius" type="number" max="30" class="form-control formthings" placeholder="How Nearby?">
+              <span>  Miles</span>
+
+              <p>Please Note if left blank, the default will be set to 10 Miles</p>
+            </div>
+
+            <!-- LOCATION THINGS
+            
+            Do we want to ask the user for an address and simply use that if we don't get any more complicated location things working?
+
+              <div class="form-group" id="firstaddresssignup">
+                <input id="firstaddresssignup" type="text" class="form-control" placeholder="First Line of Address">
+              </div>
+
+              <div class="form-group" id="postcodesignup">
+                <input id="postcodesignup" type="text" class="form-control" placeholder="Postcode">
+              </div>
+
+            -->
           </div>
-
-          <!--PASSWORD STUFF
-                Something something SQL and security something something...
-          -->
-          <div id="passwordstuff" class="row">
-
-            <div class="form-group formthings" id="passwordsignup">
-              <label class="FormTitle">Password* </label>
-              <input id="passwordsignup" type="password" class="form-control formthings" placeholder="Password">
-            </div>
-
-            <div class="form-group formthings" id="passwordconfirm">
-              <label class="FormTitle">Confirm Password* </label>
-              <input id="passwordconfirm" type="password" class="form-control formthings" placeholder="Confirm Password">
-            </div>
-          
-          </div>
-
-          <!--DEFAULT PREFERENCES-->
-          <div class="form-group formthings row" id="defaultradius">
-            <label class="FormTitle">Default Radius </label>
-            <input id="defaultradius" type="number" max="30" class="form-control formthings" placeholder="How Nearby?">
-            <span>  Miles</span>
-
-            <p>Please Note if left blank, the default will be set to 10 Miles</p>
-          </div>
-
-          <!-- LOCATION THINGS
-          
-          Do we want to ask the user for an address and simply use that if we don't get any more complicated location things working?
-
-            <div class="form-group" id="firstaddresssignup">
-              <input id="firstaddresssignup" type="text" class="form-control" placeholder="First Line of Address">
-            </div>
-
-            <div class="form-group" id="postcodesignup">
-              <input id="postcodesignup" type="text" class="form-control" placeholder="Postcode">
-            </div>
-
-          -->
+        </div>
+        
 
           <!-- THE SUBMIT BUTTON -->
 
